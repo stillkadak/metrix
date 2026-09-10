@@ -1,0 +1,36 @@
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30,<1.0
+sqlalchemy>=2.0,<3.0
+alembic>=1.13,<2.0
+pydantic>=2.7,<3.0
+pydantic-settings>=2.2,<3.0
+python-jose[cryptography]>=3.3,<4.0
+passlib[bcrypt]>=1.7,<2.0
+# Passlib 1.7.x is not compatible with bcrypt 5's strict long-password check.
+bcrypt>=4.1,<5.0
+python-multipart>=0.0.9,<1.0
+email-validator>=2.1,<3.0
+PyYAML>=6.0,<7.0
+
+# --- OCR (lightweight, recommended) ---------------------------------------
+# These two Python packages are small. Real OCR ALSO needs the native
+# `tesseract` binary installed on your OS (see README "Install Tesseract").
+# If the binary isn't found, the app automatically falls back to DEMO MODE
+# (deterministic sample label text) so the whole app still works with just
+# `pip install -r requirements.txt` and nothing else.
+Pillow>=10.0,<11.0
+pytesseract>=0.3.10,<1.0
+
+# --- Optional: heavier/alternate engine & extras ---------------------------
+# Uncomment only if you specifically want these (multi-GB, slower installs):
+# paddlepaddle
+# paddleocr
+# opencv-python
+# numpy
+# pandas
+reportlab>=4.0.0,<5.0
+# openpyxl
+# pdf2image
+# redis
+# celery
+# boto3

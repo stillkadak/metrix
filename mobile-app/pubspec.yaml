@@ -1,0 +1,51 @@
+name: legal_metrix_scanner
+description: AI-Powered Legal Metrology Compliance Scanner
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # UI
+  cupertino_icons: ^1.0.6
+  flutter_svg: ^2.0.7
+  
+  # Camera & Image
+  camera: ^0.10.5
+  image_picker: ^1.0.4
+  image: ^4.0.17
+  
+  # Networking
+  dio: ^5.3.2
+  connectivity_plus: ^5.0.1
+  
+  # Storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  sqflite: ^2.3.0
+  
+  # State Management
+  provider: ^6.1.1
+  
+  # Security
+  flutter_secure_storage: ^9.0.0
+  
+  # Location
+  geolocator: ^10.0.0
+  
+  # ML
+  google_mlkit_text_recognition: ^0.11.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/

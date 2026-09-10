@@ -1,0 +1,37 @@
+# Node & Frontend dependencies
+node_modules/
+dist/
+dist-ssr/
+*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Python & Virtualenv
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# SQLite & Uploads
+*.db
+*.sqlite3
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/legal_metrix.db
+test_output_report.pdf
+
+# IDE & OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
